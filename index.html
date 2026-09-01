@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+        <title>موقع عبد الله للأدوات الذكية | Abdullah Tools</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Free, secure, and lightning-fast developer tools. Generate strong passwords, validate server URLs, track tech support tickets, and query system OS with zero annoying popup ads. Built for clean development workflow.">
+<meta name="keywords" content="Abdullah tools, safe password generator, free tech support ticket builder, server domain validator, clean dev utilities, linux os query tool, no popup ads developer tools, fast webmaster tools 2026">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+    <body>
+        <div class="header-box">
+<h1>موقع عبد الله للأدوات البرمجية المجانية</h1>
+<p>أدوات سريعة وخفيفة تساعدك في إنجاز مهامك اليومية بضغطة زر واحدة</p>
+</div>
+<br><br>
+<div class="tool-box">
+<h2>🛠️ أداة توليد وفحص كلمة المرور الآمنة:</h2>
+<form action="/generate" method="post">
+<label for="user-email">البريد الإلكتروني:</label>
+<br>
+<input type="email" id="user-email" name="email" placeholder="name@example.com" required autofocus>
+<br><br>
+<label for="pass-length">طول كلمة المرور المطلوبة (من 8 إلى 32 حرفاً):</label>
+<input type="number" id="pass-length" name="length" min="8" max="32" value="8">
+<br>
+<label for="pass-strength">مستوى تعقيد الباسوورد (شريط سحب):</label>
+<br>
+
+<input type="range" id="pass-strength" name="strength" min="1" max="3" value="2">
+<br><br>
+<input type="text" id="generated-pass" name="suggest-pass" value="A7b$m#K9_Wq2" placeholder="الباسوورد السري">
+<br><br>
+<label for="code-box">كود الـ <bdi>HTML</bdi> الجاهز لربطه بحسابك وسيرفرك الشخصي:</label>
+<br>
+<pre class="special" id="code-box"><code>&lt;form action=&quot;/secure-api&quot; method=&quot;post&quot;&gt;
+    &lt;input type=&quot;password&quot; required&gt;
+&lt;/form&gt;</code></pre>
+
+<br><br>
+<input type="submit" value="توليد باسوورد جديد">
+
+<input type="reset" value="مسح الحقول">
+</form>
+</div>
+
+<div class="tool-box">
+<h2>🛠️ أداة فحص وتوثيق الروابط الإلكترونية:</h2>
+<form action="/validate-link" method="post">
+<label for="web-url">أدخل رابط الموقع المراد فحص أمانه:</label>
+<br>
+<input type="url" id="web-url" name="site-url" placeholder="https://example.com" required>
+<br><br>
+<label for="check-date"> تاريخ ووقت جدولة الفحص الدوري:</label>
+<br>
+<input type="datetime-local" id="check-date" name="checked_at" required>
+<br><br>
+<label for="search-tools"> هل تبحث عن أداة معينة؟</label>
+<br>
+<input type="search" id="search-tools" name="tool_query" placeholder="اكتب اسم الاداة التي تبحث عنها">
+<br><br>
+<input type="submit" value="ابدأ فحص الرابط الآن">
+<input type="reset" value="مسح البيانات"> 
+</form>
+</div>
+<div class="tool-box">
+<h2>🛠️ أداة إنشاء وتوثيق تذاكر الدعم الفني:</h2>
+<form action="/create-ticket" method="post">
+ <label for="ticket-type">اختر نوع المشكلة التقنية:</label>
+ <select id="ticket-type" name="issue-type">
+ 
+<option value="server">عطل في السيرفر والخادم</option>
+<option value="database">مشكلة في قاعدة البيانات</option>
+<option value="security">اختراق أو ثغرة أمنية</option>
+<option value="other">مشكلة أخرى عامة</option>
+</select>
+<br><br>
+<label for="ticket-details" >اكتب تفاصيل المشكلة بالكامل:</label>
+<br>
+<textarea id="ticket-details" name="issue-details" rows="5" cols="50" placeholder="يرجى كتابة خطوات حدوث الخطأ بالتفصيل..."></textarea>
+<br><br>
+<label for="screenshot-file">ارفع صورة للخطأ أو ملف التقرير (إن وجد):</label>
+<br>
+<input type="file" id="screenshot-file" name="screenshot">
+<br><br>
+<label for="issue-time">وقت حدوث العطل البرمجي بدقة:</label>
+<br>
+<input type="time" id="issue-time" name="occurrence-time">
+<br><br>
+<input type="submit" value="توليد تذكرة الدعم الفني">
+<input type="reset" value="مسح الحقول"> 
+</form>
+</div> 
+<div class="tool-box">
+<h2>🛠️ أداة فحص وتحديد نظام تشغيل السيرفر:</h2>
+<form action="/check-os" method="post" target="_blank">
+ <label for="os-input">اكتب أو اختر نظام تشغيل السيرفر المراد فحصه:</label>
+ <br>  
+ <input type="text" id="os-input" name="os_name" list="os-options" placeholder="ابدأ بالكتابة للاقتراح..." required>
+ <datalist id="os-options">
+  <option value="Linux Ubuntu">
+  <option value="Linux CentOS">
+  <option value="Windows Server 2022">
+  <option value="macOS Server">
+ </datalist> 
+ <br><br>
+ <input type="submit" value="ابدأ تحليل السيرفر">
+ <input type="reset" value="مسح الحقول">
+</form>
+<br><br>
+</div>
+<div class="system-info-box">
+<p>المطور المسؤول عن تحديث الأنظمة الحالية: عبد الله محمد <bdi>(Version 2026)</bdi></p>
+<p> رابط فحص قاعدة البيانات الاحتياطية:
+<br>
+https://www.abdullah-tools-database-system-backup-validator<wbr>.com/live</p>
+</div>
+<br><br>
+<div class="footer-box">
+ <p>جميع الحقوق محفوظة ومحمية للمبرمج عبد الله محمد &copy; 2026</p>
+</div>
+    </body>
+
+</html>

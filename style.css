@@ -1,0 +1,97 @@
+
+:root {
+    --main-bg-color: #0d1117;
+}
+/* 1. استهداف جسم الموقع بالكامل لتلوين الخلفية باللون الداكن الحصري */
+body {
+    background-color: var(--main-bg-color);
+    font-family: 'Noto Sans Arabic', sans-serif;
+   font-size: 1rem;
+}
+
+/* 2. استهداف العنوان الرئيسي للمنصة لتلوينه بالأزرق الكهربائي */
+h1 {
+    color: #58a6ff;
+   letter-spacing: 1px;
+   font-size: 2rem;
+  font-weight:900;
+}
+
+/* 3. استهداف العناوين الجانبية للأدوات لتلوينها بالأخضر الزمردي */
+h2 {
+    color: #7ee787;
+    font-size: 1.5rem;
+}
+
+/* 4. تطبيق قواعد التسمية والخلفية الاحترافية بناءً على فيديو 4 و 5 */
+/* استهداف صندوق الرأس عبر الـ Class لمنحه خلفية متباينة */
+.header-box {
+background-color: #161b22;
+padding: 30px;
+border: 1px solid #30363d;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+
+}
+
+/* استهداف صناديق الأدوات الأربعة عبر الـ Class لمنحها خلفية معمارية بارزة */
+.tool-box {
+    background-color: #21262d;
+padding: 20px;
+margin: 25px;
+width: 620px;
+border-radius: 12px;
+}
+.footer-box {
+background-color: var(--main-bg-color);
+margin: 25px;
+width: calc(100% - 80px);
+border-radius: 12px;
+}
+label {
+  display: inline-block;
+
+}
+.special {
+ overflow-x: auto;
+ width: 180px;  
+  
+}
+.system-info-box {
+   background-color: #0d1117;
+   padding: 15px 20px;
+   margin: 25px;
+   width: fit-content; 
+}
+.header-box p,
+.system-info-box p,
+label {
+   line-height: 1.6;
+}
+input[type="submit"],
+input[type="reset"] {
+    font-weight: 900;
+   cursor: pointer;
+}
+textarea {
+    font-weight: 700;
+}
+input[type="submit"]:hover {
+    background-color: #7ee787;
+}
+input[type="reset"]:hover {
+    background-color: #f85149;
+}
+input[value="A7b$m#K9_Wq2"] {
+   color: rgb(0, 0, 0, 0.5);
+}
+::selection {
+    background-color: #58a6ff;
+    color: #0d1117;
+}
+*{
+    box-sizing: border-box;
+}
+input[type="submit"] {
+   transition: all 0.3s ease;
+}
