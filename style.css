@@ -37,13 +37,13 @@ box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
 /* استهداف صناديق الأدوات الأربعة عبر الـ Class لمنحها خلفية معمارية بارزة */
 .tool-box {
     background-color: #21262d;
+   
 padding: 20px;
-margin: 25px;
-width: 620px;
+width: 450px;
 border-radius: 12px;
 }
 .footer-box {
-background-color: var(--main-bg-color);
+background-color:#30363d;
 margin: 25px;
 width: calc(100% - 80px);
 border-radius: 12px;
@@ -58,7 +58,7 @@ label {
   
 }
 .system-info-box {
-   background-color: #0d1117;
+   background-color:#30363d;
    padding: 15px 20px;
    margin: 25px;
    width: fit-content; 
@@ -94,4 +94,14 @@ input[value="A7b$m#K9_Wq2"] {
 }
 input[type="submit"] {
    transition: all 0.3s ease;
+}
+.tools-container {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-evenly;
+   gap: 20px
+
+}
+.header-box p {
+    color: #7ee787;
 }
